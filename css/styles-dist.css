@@ -1,0 +1,215 @@
+body {    
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+}
+
+:root {
+    --font-lexend: 'Lexend Deca', sans-serif;
+    --font-shoulders: 'Big Shoulders Display', cursive;    
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+.main {
+    max-width: 375px;
+    padding: 90px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 700px;
+        padding: 90px 0;        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        max-width: 950px; 
+        padding: 65px 0;
+    }
+}
+
+.container-border {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-border {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.article {
+    padding: 60px 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        padding: 60px 60px 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article {
+        padding: 60px 75px 60px 40px;
+    }
+}
+
+.article--orange {
+    background-color: var(--Bright-orange);
+}
+
+.article--cyan {
+    background-color: var(--Dark-cyan);
+}
+
+.article--dark-cyan {
+    background-color: var(--Very-dark-cyan);
+}
+
+@media screen and (min-width: 768px) {
+    .image {
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .image {
+        width: 30%;
+    }
+}
+
+.title {
+    font-size: 2.6rem;
+    font-family: var(--font-shoulders);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        font-size: 2.6rem;
+    }
+}
+
+.text {
+    margin-bottom: 40px;
+    font-family: var(--font-lexend);
+    color: var(--Transparent-white-paragraphs);
+    line-height: 27px;
+}
+
+@media screen and (min-width: 768px) {
+    .text {
+        margin-bottom: 60px;
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .text {        
+        font-size: .9rem;
+        line-height: 30px;
+    }
+}
+
+.link {    
+    padding: 15px 40px;
+    font-family: var(--font-lexend);
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .link {
+        padding: 20px 55px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .link {
+        padding: 13px 40px;
+        font-size: .9rem;
+        border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    }
+}
+
+.link--orange {
+    color: var(--Bright-orange);
+}
+
+.link--cyan {
+    color: var(--Dark-cyan);
+}
+
+.link--dark-cyan {
+    color: var(--Very-dark-cyan);
+}
+
+.attribution { 
+    max-width: 375px;
+    padding: 0 20px 10px;
+    font-size: 13px; 
+    font-family: var(--font-lexend);
+    color: black;
+    text-align: center; 
+}
+
+@media screen and (min-width: 768px) {
+    .attribution {
+        max-width: 700px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .attribution {
+        max-width: 950px;
+        font-size: 1rem;
+    }
+}
+
+.attribution__link { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1024px) {
+    .link--orange:hover {
+        color: var(--Very-light-gray-background-headings-buttons);
+        background-color: var(--Bright-orange);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .link--cyan:hover {
+        color: var(--Very-light-gray-background-headings-buttons);
+        background-color: var(--Dark-cyan);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .link--dark-cyan:hover {
+        color: var(--Very-light-gray-background-headings-buttons);
+        background-color: var(--Very-dark-cyan);
+    }
+}
